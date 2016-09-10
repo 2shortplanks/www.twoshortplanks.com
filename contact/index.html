@@ -1,0 +1,111 @@
+---
+layout: page
+---
+<h2>Online Contact Details</h2>
+
+<!-- a table?  YES A TABLE.  This is TABULAR DATA -->
+<table>
+  <tr><td>Email</td><td class="obfu mikealpharomeokiloattangowhiskeyoscarsierrahoteloscarromeotangopapalimaalphanovemberkilosierradotcharlieoscarmike">Loading...</td>
+  <tr><td>Irc</td><td>Trelane on irc.perl.org</td></tr>
+</table>  
+
+<h2>Telephone Numbers</h2>
+
+<!-- a table?  YES A TABLE.  This is TABULAR DATA -->
+<table>
+  <tr><td>Cell Phone</td><td class="obfu one-fiveoneeight-sevenninefive-zerosixfourtwo">Loading...</td></tr>
+  <tr><td>Home Phone</td><td class="obfu one-fiveoneeight-sevenninefour-zerofivethreeeight">Loading...</td></tr>
+</table>
+
+<h2>Street Address</h2>
+
+<p>
+35 Spring Hill Road<br>
+New Lebanon<br>
+NY 12125<br>
+USA
+</p>
+
+<a href="https://maps.google.com/maps?q=42.480358,-73.370349">
+<p>
+<img src="http://maps.googleapis.com/maps/api/staticmap?center=35+Spring+Hill+Rd+New+Lebanon&zoom=6&size=600x300&maptype=road&markers=color:blue%7Clabel:H%7C42.480358,-73.370349&sensor=false">
+</p>
+
+<p>
+<img src="http://maps.googleapis.com/maps/api/staticmap?center=35+Spring+Hill+Rd+New+Lebanon&zoom=16&size=600x300&maptype=hybrid&markers=color:blue%7Clabel:H%7C42.480358,-73.370349&sensor=false">
+</p>
+
+<p>
+<img src="house2.jpg" width='600' height='400' alt='picture of the house'>
+</p>
+
+</a>
+
+
+</div>
+
+<!-- de-obfu the obfuscated things on demand -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+
+var mymap = {
+  zero: '0',
+  one: '1',
+  two: '2',
+  three: '3',
+  four: '4',
+  five: '5',
+  six: '6',
+  seven: '7',
+  eight: '8',
+  nine: '9',
+  at: '@',
+  alpha: 'a',
+  bravo: 'b',
+  charlie: 'c',
+  delta: 'd',
+  echo: 'e',
+  foxtrot: 'f',
+  gamma: 'g',
+  hotel: 'h',
+  indigo: 'i',
+  juliett: 'j',
+  kilo: 'k',
+  lima: 'l',
+  mike: 'm',
+  november: 'n',
+  oscar: 'o',
+  papa: 'p',
+  quebec: 'q',
+  romeo: 'r',
+  sierra: 's',
+  tango: 't',
+  uniform: 'u',
+  victor: 'v',
+  whiskey: 'w',
+  'x-ray': 'x',
+  yankee: 'y',
+  zulu: 'z',
+  dot: '.',
+  space: ' '
+};
+
+function decoder(string) {
+  if (string.length == 0)
+    return "";
+  for (k in mymap)
+    if (mymap.hasOwnProperty(k))
+      if (string.indexOf(k) == 0) {
+        return mymap[k] + decoder(string.substr(k.length));
+      }
+  return string.substr(0,1) + decoder(string.substr(1));
+}
+
+$(function () {
+  $(".obfu").html("<span class='reveal'>CLICK TO SHOW</span>");
+  $(".obfu").click(function () {
+    var string = $(this).attr("class").replace("obfu ","");
+    $(this).html( decoder( string ) )
+  });
+});
+</script>

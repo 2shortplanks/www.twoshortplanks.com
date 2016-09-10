@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<!-- open id -->
+<link rel="openid.server" href="http://www.myopenid.com/server">
+<link rel="openid.delegate" href="http://markfowler.myopenid.com/">
+<link rel="openid2.provider" href="http://www.myopenid.com/server">
+<link rel="openid2.local_id" href="http://markfowler.myopenid.com/">
+
+<!-- fonts -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,900' rel='stylesheet' type='text/css'>
+
+<title>twoshortplanks</title>
+<style>
+#title {
+  margin-top: 100px;
+  margin-left: 200px;
+  white-space: nowrap;
+}
+
+.big
+{
+  font-family: 'Titillium Web', helvetica, arial, verdana, tahoma, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 500%;
+  font-weight: 800;
+  display: inline-block;
+}
+
+a:hover {
+  text-shadow: 1px 1px gray
+}
+
+#two { color: red }
+#two :hover { background: black }
+#short { color: green; }
+#short :hover { margin-left: 3px }
+#planks { color: blue; }
+#planks :hover { margin-left: 3px }
+
+#strapline
+{
+  margin-left: 340px;
+  margin-top: -16px;
+  color: #444444;
+  font-size: 140%;
+  font-family: 'Titillium Web', helvetica, arial, verdana, tahoma, sans-serif;
+
+}
+
+#main
+{
+  margin-left: 240px;
+  margin-top: 40px;
+  width: 450px;
+  color: black;
+  font-size: 10pt;
+  font-family: 'Titillium Web', helvetica, arial, verdana, tahoma, sans-serif;
+}
+
+
+.reveal {
+  background: gray;
+  color: white;
+border-radius: 4pt;
+font-size: 8pt;
+padding:3px;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+<div id="title"><div id="two" class="big">two</div><div id="short" class="big">short</div><div id="planks" class="big">planks</div></div>
+<div id="strapline">The Personal Homepages of Mark Fowler</div>
+<div id="main">
+{{ content }}
+</div>
+</body>
+</html>

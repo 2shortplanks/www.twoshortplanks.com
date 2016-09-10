@@ -1,23 +1,25 @@
 ---
 layout: default
 ---
+<p>
+This is my Homepage.  There are many like it, but you're looking at mine.
+</p>
+      
+<p>One day, when I have too much free time, I will replace this with something
+better.  But for today, you might want to see:</p>
 
-<div class="home">
+<ul>
+<!-- <li><a href="http://blog.twoshortplanks.com" rel="me">My Perl Blog</a></li> -->
+ <!-- <li><a href="/projects">Programming Projects</a></li> -->
+ <li><a href="/cv">My Resum&eacute; (CV)</a>
+ <li><a href="/contact">My Contact Details</a>
+</ul>
 
-  <h1 class="page-heading">Posts</h1>
+<p>Or me elsewhere on the web:</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<ul>
+  <li><a href="https://metacpan.org/author/MARKF" rel="me">CPAN</a> (Perl Modules)</li>
+  <li><a href="https://github.com/2shortplanks" rel="me">github</a> (Public Version Control)</li>
+  <li><a href="http://www.maxmind.com/">My Employer</a></li>
+</ul>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
