@@ -1,26 +1,95 @@
----
-layout: default
----
-<p>
-This is my Homepage.  There are many like it, but you're looking at mine.
-</p>
-      
-<p>One day, when I have too much free time, I will replace this with something
-better.  But for today, you might want to see:</p>
+<html>
+    <head>
+        <title>twoshortplanks</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-<ul>
-<!-- <li><a href="http://blog.twoshortplanks.com" rel="me">My Perl Blog</a></li> -->
- <!-- <li><a href="/projects">Programming Projects</a></li> -->
- <li><a href="/cv">My Resum&eacute; (CV)</a>
- <li><a href="/contact">My Contact Details</a>
-</ul>
+    <body class="color-black">
+        <header>
+            <div id="top">
+                <div style="display: flex; align-items: center;">
+                    <a href="/" id="logo">
+                        <img src="/twoshortplanks-logo.png" width="60" height="60">
+                    </a>
+                    <a href="/" id="logotext">twoshortplanks</a>
+                </div>
+                <div style="display: flex; margin-left: auto;"> <!-- Add flex container and margin-left: auto -->
+                    <a href="/cv/"><span class="effect">Résumé</span></a> <!-- Move Résumé button to the middle -->
+                    <a href="/contact/"><span class="effect">Contact</span></a>
+                </div>
+            </div>
 
-<p>Or me elsewhere on the web:</p>
+            <div id="container">
+                <div class="item item-left"><img src="sometimes.svg" alt="sometimes I'm as thick as two short planks"></div>
+                <div class="item item-right"><img src="mark.jpg" alt="portrait picture"></div>
+            </div>
+    
+            <div id="breadcrumbs">
+                <div id="breadcrumbs-corner"></div>
+                <!-- <div id="crumbs">&rarr; Home</div> -->
+            </div>
+        </header>
 
-<ul>
-  <li><a href="http://blog.twoshortplanks.com">My Perl Blog</a></li>
-  <li><a href="https://metacpan.org/author/MARKF" rel="me">CPAN</a> (Perl Modules)</li>
-  <li><a href="https://github.com/2shortplanks" rel="me">github</a> (Public Version Control)</li>
-  <li><a href="http://www.maxmind.com/">My Employer</a></li>
-</ul>
+        <article>
+            <h1>The Personal Webpages of Mark Fowler</h1>
+            <p>
+            This site is <em>two short planks</em>, my personal website.  The name is based on the old English idiom for
+            something stupid ("as thick as two short planks") and seemed like a good idea at the time back when I was a
+            lowly student and Alta Vista was the pinnacle of web technology.
+            </p>
 
+            <p>
+            I've had this site for nearly thirty years (since sometime in 1996) but for most of it's life it's
+            contained little more than my <a href="/contact/">contact details</a> and my <a href="/cv/"">curriculum vitae (CV) / résumé</a>.
+            Most of my writing for that quartre century has been elsewhere on the web (for example, in the
+            <a href="https://perladvent.org/">Perl Advent Calendar</a>, which for throughout the years I've written
+            several books' worth of material).
+            </p>
+
+            <h2>About Mark Fowler</h2>
+
+            <p>
+            Hello.  My name is Mark Fowler.
+            </p>
+
+            <p>
+            I've got several claims to fame;  For example, back in 2006 I worked on
+            Zimki, which <a href="https://www.porter.run/blog/history-of-paas-how-canon-almost-became-a-major-cloud-provider">many people claim to be the world's first PaaS</a>
+            (Platform as a Service) offering.  I'm infamous enough my email address
+            is already on your Mac (I know this because Apple installs it there at the factory).
+             I've played football (soccer) with Barry White, been driven around by the Stig,
+            been Time Magazine's person of the year. All of this, and more, I expand on on my <a href="/about/fun-facts/">Fun
+                Facts</a> page.
+            </p>
+                        
+            <p>
+            It's possible that you might know me in Real Life™.  Right now my
+            family and I are splitting our time between Chippenham, UK (down the road from Harry Potter's house and parts of Hogwarts)
+            and Chatham in upstate New York.
+            </p>
+            
+            <p>
+            I grew up in Chippenham, attending Frogwell and Hardenhuish School. 
+            I attended both Imperial College and the University of Bath.
+             While I worked in London at Profero (doing New Media during the dot com boom),
+             Fotango (making Zimki amongst other things), and Photobox (saving Christmas by introducing bursting to the cloud),
+             I was heavily involved in the Perl community, being the leader of the
+             London Perl Mongers user group and speaking at several Perl conferences
+             a year.  After that I lived in New Lebanon in upstate NY, Richmond
+             in western Massachusetts, and in Chatham, NY, working for
+             OmniTI/Circonus (doing observability tooling, OmniOS, and helping with the Surge conference),
+             MaxMind (working on their geo-location and fraud prevention systems), and at CircleCI
+             (doing cloud type stuff - including a bunch of cost optomization work - for their CI/CD product).
+             If you've ever crossed paths with me (or just wish you had) and are now reading this...reach out via the
+             <a href="/contact/">contact</a> page and say hi.
+            </p>
+            
+        </article>
+        
+        <footer>
+            <div id="footer-corner"></div>
+            <p>© 1996 - 2025 Mark Fowler</p>
+        </footer>
+    </body>
+</html>

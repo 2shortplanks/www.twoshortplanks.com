@@ -1,0 +1,176 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 0, 50);
+    color: white;
+    font-family: Helvetica, Arial, sans-serif; /* Set default font */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+#breadcrumbs {
+    background: yellow;
+    color: black;
+    height: 50px;
+    width: calc(100% - 50px);
+}
+
+#breadcrumbs-corner {
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 50px;
+    background: yellow;
+    border-bottom-right-radius: 50% 100%;
+}
+
+#crumbs {
+    padding: 10px;
+}
+
+#top {
+    background: yellow;
+    color: black;
+    padding: 10px;
+    display: flex; /* Add flex display */
+    align-items: center; /* Align items vertically */
+}
+
+.effect {
+    background: black;
+    color: yellow;
+    padding: 4px 20px;
+    width: 100px;
+    border-radius: 20px 50%;
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.effect:hover {
+    background: white;
+    color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #top div:last-child {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: flex-end; /* Align buttons to the right */
+        width: 100%; /* Make buttons container full width */
+    }
+
+    .effect {
+        margin-bottom: 10px;
+    }
+}
+
+/* Container Styles */
+#container {
+    background: yellow;
+    display: flex;
+    height: 60vh;
+    min-height: 300px;
+    justify-content: center;
+}
+
+.item {
+    padding: 20px;
+    object-fit: contain;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Article Styles */
+article {
+    margin: 40px auto;
+    max-width: 900px; /* Set maximum width */
+    padding: 0 30px; /* Add minimum padding */
+}
+
+article p, h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0; /* Restore default margin for paragraphs */
+}
+
+article h1 {
+    font-size: 2em; /* Standard size for h1 */
+}
+
+article h2 {
+    font-size: 1.5em; /* Standard size for h2 */
+}
+
+article h3 {
+    font-size: 1.17em; /* Standard size for h3 */
+}
+
+article a {
+    color: yellow; /* Restore default link color */
+}
+
+article details {
+    margin-bottom: 1em;
+}
+
+article details p {
+    margin-bottom: 1.5em;
+    margin-left: 20px;
+}
+
+a#logotext {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+#logotext {
+    font-size: 1.5em;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+#logo, #logotext {
+    cursor: pointer; /* Indicate clickable elements */
+}
+
+/* Footer Styles */
+footer {
+    color: black;
+    padding-left: 0px;
+    background: yellow;
+    width: calc(100% - 50px);
+    min-height: 50px;
+    margin-left: 50px;
+    margin-top: auto;
+    text-align: right;
+    display: flex;
+    align-items: center; /* Vertically align the text */
+}
+
+footer p {
+    margin-left: auto; /* Right-align the text */
+    padding: 10px; /* Add padding to the text */
+}
+
+#footer-corner {
+    position: absolute;
+    left: 0px;
+    width: 100px;
+    height: 50px;
+    background: yellow; /* Change from green to yellow */
+    border-top-left-radius: 50% 100%;
+}
+

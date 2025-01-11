@@ -1,98 +1,143 @@
----
-layout: page
----
-<h2>Online Contact Details</h2>
+<html>
+    <head>
+        <title>twoshortplanks</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-<!-- a table?  YES A TABLE.  This is TABULAR DATA -->
-<table>
-  <tr><td>Email</td><td class="obfu mikealpharomeokiloattangowhiskeyoscarsierrahoteloscarromeotangopapalimaalphanovemberkilosierradotcharlieoscarmike">Loading...</td>
-  <tr><td>Mastodon</td><td><a href='https://fedi.twoshortplanks.com/@mark'>@mark@fedi.twoshortplanks.com</a></td></tr>
-</table>
+    <body class="color-black">
+        <header>
+            <div id="top">
+                <div style="display: flex; align-items: center;">
+                    <a href="/" id="logo">
+                        <img src="/twoshortplanks-logo.png" width="60" height="60">
+                    </a>
+                    <a href="/" id="logotext">twoshortplanks</a>
+                </div>
+                <div style="display: flex; margin-left: auto;"> <!-- Add flex container and margin-left: auto -->
+                    <a href="/cv/"><span class="effect">Résumé</span></a> <!-- Move Résumé button to the middle -->
+                    <a href="/contact/"><span class="effect">Contact</span></a>
+                </div>
+            </div>
+    
+            <div id="breadcrumbs">
+                <div id="breadcrumbs-corner"></div>
+                <!-- <div id="crumbs">&rarr; Home</div> -->
+            </div>
+        </header>
 
-<h2>Telephone Numbers</h2>
+        <article>
+                <h1>Contact Details</h1>
 
-<!-- a table?  YES A TABLE.  This is TABULAR DATA -->
-<table>
-  <tr><td>US Cell Phone</td><td class="obfu one-fiveoneeight-sevenninefive-zerosixfourtwo">Loading...</td></tr>
-  <tr><td>UK Mobile Phone</td><td class="obfu zeroseventhreezerofive foursevenonesixfoureight">Loading...</td></tr>
-</table>
+                <style>
+                .reveal {
+                    background: white;
+                    color: black;
+                    border-radius: 10px;
+                    font-size: 8pt;
+                    padding:5px;
+                  }
+                  table td {
+                    padding: 5px;
+                  }
+                </style>
 
-<p>(You can FaceTime/Messages Message both the Cell and Mobile numbers, or WhatsApp to my UK number)</p>
+                <h2>Online Contact Details</h2>
+                
+                <!-- a table?  YES A TABLE.  This is TABULAR DATA -->
+                <table>
+                  <tr><td>Email</td><td class="obfu mikealpharomeokiloattangowhiskeyoscarsierrahoteloscarromeotangopapalimaalphanovemberkilosierradotcharlieoscarmike">Loading...</td>
+                </table>
+                
+                <h2>Telephone Numbers</h2>
+                
+                <!-- a table?  YES A TABLE.  This is TABULAR DATA -->
+                <table>
+                  <tr><td>US Cell Phone</td><td class="obfu one-eightthreeeight-twoseventhree-threefivethreenine">Loading...</td></tr>
+                  <tr><td>UK Mobile Phone</td><td class="obfu zeroseventhreezerofive foursevenonesixfoureight">Loading...</td></tr>
+                </table>
+                
+                <p>(You can FaceTime/Messages Message both the Cell and Mobile numbers, or WhatsApp to my UK number)</p>
+                
+                <h2>Street Address</h2>
+                
+                <p>
+                33 High Street<br>
+                Chatham<br>
+                NY 12037<br>
+                USA
+                </p>
+        </article>
+        
+        <footer>
+            <div id="footer-corner"></div>
+            <p>© 1996 - 2025 Mark Fowler</p>
+        </footer>
+    </body>
 
-<h2>Street Address</h2>
+    <!-- de-obfu the obfuscated things on demand -->
+    <script>
 
-<p>
-33 High Street<br>
-Chatham<br>
-NY 12037<br>
-USA
-</p>
+    var mymap = {
+        zero: '0',
+        one: '1',
+        two: '2',
+        three: '3',
+        four: '4',
+        five: '5',
+        six: '6',
+        seven: '7',
+        eight: '8',
+        nine: '9',
+        at: '@',
+        alpha: 'a',
+        bravo: 'b',
+        charlie: 'c',
+        delta: 'd',
+        echo: 'e',
+        foxtrot: 'f',
+        gamma: 'g',
+        hotel: 'h',
+        indigo: 'i',
+        juliett: 'j',
+        kilo: 'k',
+        lima: 'l',
+        mike: 'm',
+        november: 'n',
+        oscar: 'o',
+        papa: 'p',
+        quebec: 'q',
+        romeo: 'r',
+        sierra: 's',
+        tango: 't',
+        uniform: 'u',
+        victor: 'v',
+        whiskey: 'w',
+        'x-ray': 'x',
+        yankee: 'y',
+        zulu: 'z',
+        dot: '.',
+        space: ' '
+    };
+    
+    function decoder(string) {
+        if (string.length == 0)
+        return "";
+        for (k in mymap)
+        if (mymap.hasOwnProperty(k))
+            if (string.indexOf(k) == 0) {
+            return mymap[k] + decoder(string.substr(k.length));
+            }
+        return string.substr(0,1) + decoder(string.substr(1));
+    }
 
-<!-- de-obfu the obfuscated things on demand -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-<script>
-
-var mymap = {
-  zero: '0',
-  one: '1',
-  two: '2',
-  three: '3',
-  four: '4',
-  five: '5',
-  six: '6',
-  seven: '7',
-  eight: '8',
-  nine: '9',
-  at: '@',
-  alpha: 'a',
-  bravo: 'b',
-  charlie: 'c',
-  delta: 'd',
-  echo: 'e',
-  foxtrot: 'f',
-  gamma: 'g',
-  hotel: 'h',
-  indigo: 'i',
-  juliett: 'j',
-  kilo: 'k',
-  lima: 'l',
-  mike: 'm',
-  november: 'n',
-  oscar: 'o',
-  papa: 'p',
-  quebec: 'q',
-  romeo: 'r',
-  sierra: 's',
-  tango: 't',
-  uniform: 'u',
-  victor: 'v',
-  whiskey: 'w',
-  'x-ray': 'x',
-  yankee: 'y',
-  zulu: 'z',
-  dot: '.',
-  space: ' '
-};
-
-function decoder(string) {
-  if (string.length == 0)
-    return "";
-  for (k in mymap)
-    if (mymap.hasOwnProperty(k))
-      if (string.indexOf(k) == 0) {
-        return mymap[k] + decoder(string.substr(k.length));
-      }
-  return string.substr(0,1) + decoder(string.substr(1));
-}
-
-$(function () {
-  $(".obfu").html("<span class='reveal'>CLICK TO SHOW</span>");
-  $(".obfu").click(function () {
-    var string = $(this).attr("class").replace("obfu ","");
-    $(this).html( decoder( string ) )
-  });
-});
-</script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.obfu').forEach((e) => {
+            e.innerHTML = "<span class='reveal'>CLICK TO SHOW</span>";
+            e.addEventListener('click', function() {
+                e.innerHTML = decoder(e.getAttribute('class').replace('obfu ', ''));
+            });
+        })
+    });
+    </script>
+</html>
