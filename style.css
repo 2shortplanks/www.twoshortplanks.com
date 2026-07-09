@@ -338,9 +338,55 @@ footer p {
 
     aside {
         width: auto;
-        max-width: 260px;
         margin-top: 40px;
         border-top: 1px dashed var(--border);
         padding-top: 24px;
+        display: grid;
+        grid-template-columns: 1fr 180px;
+        grid-template-areas:
+            "spec fig"
+            "nav  fig"
+            "nav  cap";
+        column-gap: 24px;
+        align-items: start;
+    }
+
+    aside img {
+        grid-area: fig;
+    }
+
+    aside .figure-caption {
+        grid-area: cap;
+    }
+
+    aside .spec {
+        grid-area: spec;
+        margin: 0 0 20px;
+    }
+
+    aside .side-nav {
+        grid-area: nav;
+    }
+}
+
+@media (max-width: 400px) {
+    aside {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "spec"
+            "nav"
+            "fig"
+            "cap";
+    }
+
+    aside img {
+        max-width: 220px;
+        margin: 24px auto 0;
+    }
+
+    aside .figure-caption {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
