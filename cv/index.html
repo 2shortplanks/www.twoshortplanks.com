@@ -1,58 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>twoshortplanks</title>
+        <meta charset="utf-8">
+        <title>R&eacute;sum&eacute; &mdash; twoshortplanks</title>
         <link rel="stylesheet" type="text/css" href="/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <body class="color-black">
+    <body>
         <header>
-            <div id="top">
-                <div style="display: flex; align-items: center;">
-                    <a href="/" id="logo">
-                        <img src="/twoshortplanks-logo.png" width="60" height="60">
-                    </a>
-                    <a href="/" id="logotext">twoshortplanks</a>
+            <nav id="top">
+                <a href="/" id="brand">
+                    <img src="/twoshortplanks-logo.png" width="44" height="44" alt="two short planks logo">
+                    <span id="logotext">twoshortplanks</span>
+                </a>
+                <div id="nav-links">
+                    <a href="/cv/">R&eacute;sum&eacute;</a>
+                    <a href="/contact/">Contact</a>
                 </div>
-                <div style="display: flex; margin-left: auto;"> <!-- Add flex container and margin-left: auto -->
-                    <a href="/cv/"><span class="effect">Résumé</span></a> <!-- Move Résumé button to the middle -->
-                    <a href="/contact/"><span class="effect">Contact</span></a>
-                </div>
-            </div>
-    
-            <div id="breadcrumbs">
-                <div id="breadcrumbs-corner"></div>
-                <!-- <div id="crumbs">&rarr; Home</div> -->
-            </div>
+            </nav>
         </header>
 
+        <div id="wrapper">
         <article>
 
-                <h1>Mark Fowler's Résumé</h1>
+                <h1>Mark Fowler's R&eacute;sum&eacute;</h1>
 
                 <p>Experienced cloud engineer specializing in cloud cost
                 analysis and effective cost reduction who is used to operating at all levels of
-                the business from technical to C-level conversations.  Proven track record in
+                the business from technical to C-level conversations.&nbsp; Proven track record in
                 delivering multi-million-dollar yearly savings whilst improving customer
                 experience and reliability.</p>
                 
                 <h1>Previous Employment</h1>
                 
-                <h2>Staff Engineer, CircleCI, Telecommute, US (2020–Present)</h2>
+                <h2>Staff Engineer, CircleCI</h2>
+                <p class="job-meta">Telecommute, US &middot; 2020&ndash;Present</p>
                 
                 <p>As a cloud CI/CD provider CircleCI can in many ways be seen
                 as a value-add reseller of AWS and GCP compute and storage systems, and the
                 effective margin it can charge on these costs is fundamental to the viably of
-                the company.  I joined the newly formed “CoGS” team with the remit of getting
+                the company.&nbsp; I joined the newly formed &ldquo;CoGS&rdquo; team with the remit of getting
                 these costs under control and meeting aggressive targets.</p>
                 
                 <p>I was able, through a combination of deep cost analysis,
                 tackling of low hanging fruit, and a series of longer-term projects, to achieve
-                several million dollars of savings a year.  I have been involved at all levels
-                of the process.  As an example of the technical work, I individually
+                several million dollars of savings a year.&nbsp; I have been involved at all levels
+                of the process.&nbsp; As an example of the technical work, I individually
                 implemented a Docker storage plugin to transparently cache and restore on
                 demand customer images to object storage to replace a expensive volume storage
-                solution.  I have been integral in planning costs for large operations, for
+                solution.&nbsp; I have been integral in planning costs for large operations, for
                 example I recently was personally responsible for costing decommissioning
                 several data centers and moving workloads inside AWS and costing the various cost
                 reduction strategies that were necessary to make this cost effective. I am
@@ -62,12 +59,12 @@
                 <p>During my tenure at CircleCI I was also seconded to the Execution
                 team, the team responsible for running the customer jobs on the cloud compute,
                 storage of artifacts, and the collection of job output, and (where necessary)
-                streaming to the customer’s browser.  This means I have day to day experience
+                streaming to the customer&rsquo;s browser.&nbsp; This means I have day to day experience
                 in running microservices at scale (both within Kubernetes and within untrusted
                 customer environments), spinning up and shutting down many thousands of
                 instances an hour, scaling up and down at extreme scale, protecting against
                 third party misbehavior and abuse, and metric and tracing of complex
-                distributed systems.  Though this work I have interacted with customers at
+                distributed systems.&nbsp; Though this work I have interacted with customers at
                 multiple levels from dealing with simple feature requests to high pressure
                 incident response (both for cloud systems and working face-to-face with
                 customers supporting on-prem customer incidents). </p>
@@ -75,37 +72,39 @@
                 <p>On a technical level during this time, I have been mainly
                 programming in Go with Postgres and Redis, though I have also had the
                 opportunity to produce work with JavaScript (and React), Java, Clojure, Python,
-                and Perl and support many other languages and environments.  I have employed
+                and Perl and support many other languages and environments.&nbsp; I have employed
                 many tools including Cost Explorer (and other third-party solutions),
                 Snowflake, Mode, Looker, and the humble spreadsheet and slide deck.</p>
                 
-                <h2>Senior Programmer, MaxMind, Telecommute, US (2015–2020)</h2>
+                <h2>Senior Programmer, MaxMind</h2>
+                <p class="job-meta">Telecommute, US &middot; 2015&ndash;2020</p>
                 
-                <p>Working as a developer on MaxMind’s two core products, their
+                <p>Working as a developer on MaxMind&rsquo;s two core products, their
                 well-known <a
                 href="https://www.maxmind.com/en/solutions/ip-geolocation-databases-api-services">geolocation
                 databases</a> and their <a
                 href="https://www.maxmind.com/en/solutions/fraud-prevention/overview">fraud
-                analysis services</a>.  During this time in addition to making numerous
+                analysis services</a>.&nbsp; During this time in addition to making numerous
                 improvements to the complicated process that builds their IP databases, I also
                 spearheaded the development of a transaction review tool to allow customers to
                 classify transactions as fraudulent or not and feed this information back into
-                MaxMind’s AI classification models.  I was heavily involved in MaxMind’s shift
+                MaxMind&rsquo;s AI classification models.&nbsp; I was heavily involved in MaxMind&rsquo;s shift
                 to the cloud, moving dev environments to virtual machines, the initial
-                “lift-and-shift” of production systems, and the subsequent move to Kubernetes.</p>
+                &ldquo;lift-and-shift&rdquo; of production systems, and the subsequent move to Kubernetes.</p>
                 
                 <p>From a technical level, I mainly worked in Go, Perl, and
                 (where necessary) C, and supported a plethora of API libraries in a range of
-                languages.  In addition to MaxMind’s own binary IP database format, I also
+                languages.&nbsp; In addition to MaxMind&rsquo;s own binary IP database format, I also
                 spent considerable time optimizing Postgres for rapid storage and
                 categorization of a large number of financial transactions.</p>
                 
-                <h2>System Architect, OmniTI/Circonus, Telecommute, US (2012–2015)</h2>
+                <h2>System Architect, OmniTI/Circonus</h2>
+                <p class="job-meta">Telecommute, US &middot; 2012&ndash;2015</p>
                 
-                <p>Creating the Circonus SaaS monitoring solution.  Personally
+                <p>Creating the Circonus SaaS monitoring solution.&nbsp; Personally
                 designed and created the customer API for configuring the system allowing the
-                customers to set up and enable metrics on new systems automatically.  Whist at
-                OmniTI I helped with (and spoke at) Surge, OmniTI’s industry renowned
+                customers to set up and enable metrics on new systems automatically.&nbsp; Whist at
+                OmniTI I helped with (and spoke at) Surge, OmniTI&rsquo;s industry renowned
                 conference on operating at scale.</p>
                 
                 <p>While most of my coding was in Perl, most of the work I did
@@ -113,7 +112,8 @@
                 system) and complex Postgres work (triggers, stored procedures, PSQL, custom
                 plugins).</p>
                 
-                <h2>Head of Architecture, Photobox, London, UK (2007–2012)</h2>
+                <h2>Head of Architecture, Photobox</h2>
+                <p class="job-meta">London, UK &middot; 2007&ndash;2012</p>
                 
                 <p>An advisory technical role where I helped define work for
                 the three scrum teams responsible for the Photobox website, turning
@@ -121,43 +121,45 @@
                 requirements and implementable strategies, and reviewed and monitored the work
                 as it was produced.</p>
                 
-                <p>As Head of Architecture, I was responsible for “Saving
-                Christmas” each year as traffic doubled year-on-year and grew by several orders
+                <p>As Head of Architecture, I was responsible for &ldquo;Saving
+                Christmas&rdquo; each year as traffic doubled year-on-year and grew by several orders
                 of magnitude for a few weeks compared to the rest of the year, resulting in
                 over a million euros of business each evening. I lead the team that implemented
-                a “<a href="https://youtu.be/8Gp-RXCLO2M?t=2844">burst to cloud</a>” solution without
-                a rewrite and re-architecture of the code.  By allowing on-demand transparent temporary
+                a &ldquo;<a href="https://youtu.be/8Gp-RXCLO2M?t=2844">burst to cloud</a>&rdquo; solution without
+                a rewrite and re-architecture of the code.&nbsp; By allowing on-demand transparent temporary
                 transfer of compatible users from the traditional data center to EC2 instances,
                 each instance individually running cut down versions of all the required
                 services and recording all activity for later replay in the data center, my
                 team was able to temporarily shift the majority of the load from the datacenter
-                and prevent downtime.  Because each year Photobox invests so heavily in
+                and prevent downtime.&nbsp; Because each year Photobox invests so heavily in
                 supplies, labor, and machinery expecting large orders, avoiding downtime
                 literally saved the company from financial ruin.</p>
                 
-                <h2>Head of Technology, Fotango, London, UK (2003–2007)</h2>
+                <h2>Head of Technology, Fotango</h2>
+                <p class="job-meta">London, UK &middot; 2003&ndash;2007</p>
                 
                 <p>Acted as the head of technology reporting directly to the
                 Chief Operating Officer with all technical staff reporting to me via three
                 department heads.</p>
                 
-                <p>In this role I oversaw the launch “Zimki”, <a
+                <p>In this role I oversaw the launch &ldquo;Zimki&rdquo;, <a
                 href="https://www.porter.run/blog/history-of-paas-how-canon-almost-became-a-major-cloud-provider">the
-                world’s first Platform as a Service</a>, a per-JavaScript-op billed service
-                that was a precursor to both AWS’s Lambda serverless platform and the rise of
+                world&rsquo;s first Platform as a Service</a>, a per-JavaScript-op billed service
+                that was a precursor to both AWS&rsquo;s Lambda serverless platform and the rise of
                 server-side JavaScript since popularized by node.</p>
                 
-                <p>I balanced this work with demands of Canon, Fotango’s parent
+                <p>I balanced this work with demands of Canon, Fotango&rsquo;s parent
                 company, with my staff delivering and running bespoke products such as a photo
                 sharing website and a printouts-by-mail printer demonstration website.</p>
                 
-                <h2>Head of Research and Development, Profero, London, UK (1998–2003)</h2>
+                <h2>Head of Research and Development, Profero</h2>
+                <p class="job-meta">London, UK &middot; 1998&ndash;2003</p>
                 
                 <p>Building solutions for a digital marketing startup during
-                the “dot-com” era.  During this period I implemented many unknown technologies
-                that are now commonplace:  Ad servers capable of tracking users to determine if
+                the &ldquo;dot-com&rdquo; era.&nbsp; During this period I implemented many unknown technologies
+                that are now commonplace:&nbsp; Ad servers capable of tracking users to determine if
                 they subsequently visited a client site after only viewing a banner for it or
-                to display a different advert after they’d been seen the previous one too many
+                to display a different advert after they&rsquo;d been seen the previous one too many
                 times; Dynamic adverts featuring real-time news updates, and interactive
                 adverts with games in them; Real-time competitions where the nation was
                 directed during the most popular television show of the period to all visit a website
@@ -178,7 +180,7 @@
                 <h1>Education</h1>
                 
                 <p>2:1 BSc Computer Science, University of Bath, UK<br>
-                ‘A’ Levels in Mathematics, Further Mathematics, Physics, and Chemistry<br>
+                &lsquo;A&rsquo; Levels in Mathematics, Further Mathematics, Physics, and Chemistry<br>
                 9 GCSEs, including French</p>
                 
                 <h1>Other</h1>
@@ -188,13 +190,13 @@
                      over twenty conferences on a range of topics including Scaling, CI/CD
                      systems, test driven development and many, many language features.</li>
                  <li><b>Open Source Developer</b>, with over 20 projects
-                     deployed to hundreds of millions of systems.  If you know where to look my
-                     email address is already on your mac – Apple ship my code out of the box.</li>
-                 <li><b>Involved in the Open Source Community</b> – ex-leader
-                     of one of London’s prominent programming language user groups.</li>
-                 <li><b>Accomplished Tutorial Author</b> – creator of the <a
+                     deployed to hundreds of millions of systems.&nbsp; If you know where to look my
+                     email address is already on your mac &ndash; Apple ship my code out of the box.</li>
+                 <li><b>Involved in the Open Source Community</b> &ndash; ex-leader
+                     of one of London&rsquo;s prominent programming language user groups.</li>
+                 <li><b>Accomplished Tutorial Author</b> &ndash; creator of the <a
                      href="https://perladvent.org/2024/2024-12-24.html">first programming
-                     advent calendar</a>, I’ve written literal hundreds of tutorials on various
+                     advent calendar</a>, I&rsquo;ve written literal hundreds of tutorials on various
                      programming topics.</li>
                 </ul>
                 
@@ -203,10 +205,26 @@
                             
 
         </article>
-        
+
+        <aside>
+            <img src="/planks-blueprint.svg" alt="Blueprint-style technical drawing of two short planks of wood">
+            <p class="figure-caption">FIG. 1 &mdash; the namesake, to scale.</p>
+            <dl class="spec">
+                <dt>EST.</dt><dd>1996</dd>
+                <dt>OWNER</dt><dd>Mark Fowler</dd>
+                <dt>STATUS</dt><dd>Still standing</dd>
+            </dl>
+            <nav class="side-nav">
+                <a href="/">Home</a>
+                <a href="/about/fun-facts/">Fun Facts</a>
+                <span class="current">R&eacute;sum&eacute;</span>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </aside>
+        </div>
+
         <footer>
-            <div id="footer-corner"></div>
-            <p>© 1996 - 2025 Mark Fowler</p>
+            <p>&copy; 1996&ndash;2026 Mark Fowler</p>
         </footer>
     </body>
 </html>

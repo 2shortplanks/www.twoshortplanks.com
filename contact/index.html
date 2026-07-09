@@ -1,66 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>twoshortplanks</title>
+        <meta charset="utf-8">
+        <title>Contact &mdash; twoshortplanks</title>
         <link rel="stylesheet" type="text/css" href="/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <body class="color-black">
+    <body>
         <header>
-            <div id="top">
-                <div style="display: flex; align-items: center;">
-                    <a href="/" id="logo">
-                        <img src="/twoshortplanks-logo.png" width="60" height="60">
-                    </a>
-                    <a href="/" id="logotext">twoshortplanks</a>
+            <nav id="top">
+                <a href="/" id="brand">
+                    <img src="/twoshortplanks-logo.png" width="44" height="44" alt="two short planks logo">
+                    <span id="logotext">twoshortplanks</span>
+                </a>
+                <div id="nav-links">
+                    <a href="/cv/">R&eacute;sum&eacute;</a>
+                    <a href="/contact/">Contact</a>
                 </div>
-                <div style="display: flex; margin-left: auto;"> <!-- Add flex container and margin-left: auto -->
-                    <a href="/cv/"><span class="effect">Résumé</span></a> <!-- Move Résumé button to the middle -->
-                    <a href="/contact/"><span class="effect">Contact</span></a>
-                </div>
-            </div>
-    
-            <div id="breadcrumbs">
-                <div id="breadcrumbs-corner"></div>
-                <!-- <div id="crumbs">&rarr; Home</div> -->
-            </div>
+            </nav>
         </header>
 
+        <div id="wrapper">
         <article>
                 <h1>Contact Details</h1>
 
-                <style>
-                .reveal {
-                    background: white;
-                    color: black;
-                    border-radius: 10px;
-                    font-size: 8pt;
-                    padding:5px;
-                  }
-                  table td {
-                    padding: 5px;
-                  }
-                </style>
-
                 <h2>Online Contact Details</h2>
-                
+
                 <!-- a table?  YES A TABLE.  This is TABULAR DATA -->
                 <table>
                   <tr><td>Email</td><td class="obfu mikealpharomeokiloattangowhiskeyoscarsierrahoteloscarromeotangopapalimaalphanovemberkilosierradotcharlieoscarmike">Loading...</td>
                 </table>
-                
+
                 <h2>Telephone Numbers</h2>
-                
+
                 <!-- a table?  YES A TABLE.  This is TABULAR DATA -->
                 <table>
                   <tr><td>US Cell Phone</td><td class="obfu one-eightthreeeight-twoseventhree-threefivethreenine">Loading...</td></tr>
                   <tr><td>UK Mobile Phone</td><td class="obfu zeroseventhreezerofive foursevenonesixfoureight">Loading...</td></tr>
                 </table>
-                
+
                 <p>(You can FaceTime/Messages Message both the Cell and Mobile numbers, or WhatsApp to my UK number)</p>
-                
+
                 <h2>Street Address</h2>
-                
+
                 <p>
                 33 High Street<br>
                 Chatham<br>
@@ -68,10 +51,26 @@
                 USA
                 </p>
         </article>
-        
+
+        <aside>
+            <img src="/planks-blueprint.svg" alt="Blueprint-style technical drawing of two short planks of wood">
+            <p class="figure-caption">FIG. 1 &mdash; the namesake, to scale.</p>
+            <dl class="spec">
+                <dt>EST.</dt><dd>1996</dd>
+                <dt>OWNER</dt><dd>Mark Fowler</dd>
+                <dt>STATUS</dt><dd>Still standing</dd>
+            </dl>
+            <nav class="side-nav">
+                <a href="/">Home</a>
+                <a href="/about/fun-facts/">Fun Facts</a>
+                <a href="/cv/">R&eacute;sum&eacute;</a>
+                <span class="current">Contact</span>
+            </nav>
+        </aside>
+        </div>
+
         <footer>
-            <div id="footer-corner"></div>
-            <p>© 1996 - 2025 Mark Fowler</p>
+            <p>&copy; 1996&ndash;2026 Mark Fowler</p>
         </footer>
     </body>
 
@@ -119,7 +118,7 @@
         dot: '.',
         space: ' '
     };
-    
+
     function decoder(string) {
         if (string.length == 0)
         return "";

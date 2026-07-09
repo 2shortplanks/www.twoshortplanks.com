@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#f0b429"/>
+        </marker>
+        <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="6" stroke="#8b949e" stroke-width="1"/>
+        </pattern>
+        <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+            <path d="M16 0 H0 V16" fill="none" stroke="#1d2530" stroke-width="1"/>
+        </pattern>
+    </defs>
+
+    <!-- drawing sheet -->
+    <rect x="3.5" y="3.5" width="213" height="293" fill="none" stroke="#30363d"/>
+    <rect x="12" y="12" width="196" height="278" fill="#10161d"/>
+    <rect x="12" y="12" width="196" height="278" fill="url(#grid)" stroke="#8b949e"/>
+
+    <!-- plank No.1 -->
+    <rect x="42" y="40" width="44" height="150" rx="2" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+    <rect x="42" y="40" width="44" height="14" rx="2" fill="url(#hatch)" stroke="#8b949e" stroke-width="1"/>
+    <path d="M52,62 C50,95 56,120 51,185" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+    <path d="M63,60 C66,100 60,140 65,186" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+    <path d="M76,63 C73,105 79,150 75,184" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+
+    <!-- plank No.2 -->
+    <rect x="118" y="40" width="44" height="150" rx="2" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+    <rect x="118" y="40" width="44" height="14" rx="2" fill="url(#hatch)" stroke="#8b949e" stroke-width="1"/>
+    <path d="M128,61 C131,100 126,135 130,186" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+    <path d="M152,62 C149,102 154,145 150,185" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+    <ellipse cx="140" cy="118" rx="5.5" ry="7.5" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+    <ellipse cx="140" cy="118" rx="2" ry="3" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+    <path d="M139,66 C140,85 139,100 140,110" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+    <path d="M140,126 C139,150 141,170 140,186" fill="none" stroke="#6e7681" stroke-width="0.75"/>
+
+    <!-- gap dimension -->
+    <line x1="86" y1="38" x2="86" y2="24" stroke="#f0b429" stroke-width="0.75" opacity="0.6"/>
+    <line x1="118" y1="38" x2="118" y2="24" stroke="#f0b429" stroke-width="0.75" opacity="0.6"/>
+    <line x1="89" y1="28" x2="115" y2="28" stroke="#f0b429" stroke-width="0.75" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="102" y="22" font-size="6.5" fill="#f0b429" text-anchor="middle">2&#8243;</text>
+
+    <!-- width dimension -->
+    <line x1="42" y1="193" x2="42" y2="210" stroke="#f0b429" stroke-width="0.75" opacity="0.6"/>
+    <line x1="86" y1="193" x2="86" y2="210" stroke="#f0b429" stroke-width="0.75" opacity="0.6"/>
+    <line x1="45" y1="206" x2="83" y2="206" stroke="#f0b429" stroke-width="0.75" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text x="64" y="202" font-size="6.5" fill="#f0b429" text-anchor="middle">4&#8243;</text>
+
+    <!-- length dimension -->
+    <line x1="165" y1="40" x2="180" y2="40" stroke="#f0b429" stroke-width="0.75" opacity="0.6"/>
+    <line x1="165" y1="190" x2="180" y2="190" stroke="#f0b429" stroke-width="0.75" opacity="0.6"/>
+    <line x1="176" y1="43" x2="176" y2="187" stroke="#f0b429" stroke-width="0.75" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <text transform="translate(186,115) rotate(-90)" font-size="6.5" fill="#f0b429" text-anchor="middle">24&#8243; (SHORT)</text>
+
+    <!-- part labels -->
+    <text x="64" y="222" font-size="6.5" fill="#8b949e" text-anchor="middle">PLANK No.1</text>
+    <text x="140" y="222" font-size="6.5" fill="#8b949e" text-anchor="middle">PLANK No.2</text>
+
+    <!-- notes -->
+    <text x="18" y="238" font-size="6" fill="#8b949e">NOTES:</text>
+    <text x="18" y="246" font-size="6" fill="#8b949e">1. PLANKS TO BE SHORT.</text>
+    <text x="106" y="246" font-size="6" fill="#8b949e">2. PLANKS TO BE THICK.</text>
+
+    <!-- title block -->
+    <line x1="12" y1="254" x2="208" y2="254" stroke="#8b949e"/>
+    <text x="18" y="268" font-size="8.5" fill="#f0b429" letter-spacing="1.5" font-weight="bold">TWO SHORT PLANKS</text>
+    <text x="18" y="281" font-size="6" fill="#8b949e">DWG No. TSP-1996 &#183; SCALE 1:1 &#183; QTY 2 &#183; MAT&#8217;L: WOOD</text>
+</svg>
